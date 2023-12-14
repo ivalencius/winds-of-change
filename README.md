@@ -33,9 +33,11 @@
     <img src="https://www.bc.edu/content/bc-web/offices/office-of-university-communications/policies-guidelines/graphic-identity-system/_jcr_content/par/responsive_columns/col3/bc_image_content/image.img.png/1550507598147.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
-  Wind Uncertainty and Capacity Planning During the Energy Transition
+<h3 align="center">Wind Uncertainty and Capacity Planning During the Energy Transition</h3>
+
   <p align="center">
+    *ADD DESCRIPTION*
+    <br />
     <br />
     <a href="https://github.com/github_username/winds-of-change/issues">Report Bug</a>
     ·
