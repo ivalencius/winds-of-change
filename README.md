@@ -165,7 +165,7 @@ Project Link: [https://github.com/ivalencius/winds-of-change](https://github.com
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Advisors
+## Acknowledgments
 
 * ADD GRANT INFORMATION
 * [Prof. Sweeney](https://www.bc.edu/bc-web/schools/mcas/departments/economics/people/faculty-directory/richard-l-sweeney.html)
