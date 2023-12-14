@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ivalencius/winds-of-change">
-    <img src="https://www.bc.edu/content/bc-web/offices/office-of-university-communications/policies-guidelines/graphic-identity-system/_jcr_content/par/responsive_columns/col3/bc_image_content/image.img.png/1550507598147.png" alt="Logo" width="80" height="80">
+    <img src="https://www.bc.edu/content/bc-web/offices/office-of-university-communications/policies-guidelines/graphic-identity-system/_jcr_content/par/responsive_columns/col1/bc_image_content/image.img.png/1550507443010.png" alt="Logo" width="150" height="150">
   </a>
 
 <h3 align="center">Wind Uncertainty and Capacity Planning During the Energy Transition</h3>
