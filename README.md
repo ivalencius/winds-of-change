@@ -23,7 +23,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -37,10 +36,6 @@
 <h3 align="center">project_title</h3>
   Wind Uncertainty and Capacity Planning During the Energy Transition
   <p align="center">
-    
-<!--     <br /> -->
-<!--     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a> -->
-<!--     <br /> -->
     <br />
     <a href="https://github.com/github_username/winds-of-change/issues">Report Bug</a>
     ·
