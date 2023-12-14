@@ -29,7 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/winds-of-change">
+  <a href="https://github.com/ivalencius/winds-of-change">
     <img src="https://www.bc.edu/content/bc-web/offices/office-of-university-communications/policies-guidelines/graphic-identity-system/_jcr_content/par/responsive_columns/col3/bc_image_content/image.img.png/1550507598147.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -39,9 +39,9 @@
     *ADD DESCRIPTION*
     <br />
     <br />
-    <a href="https://github.com/github_username/winds-of-change/issues">Report Bug</a>
+    <a href="https://github.com/ivalencius/winds-of-change/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/winds-of-change/issues">Request Feature</a>
+    <a href="https://github.com/ivalencius/winds-of-change/issues">Request Feature</a>
   </p>
 </div>
 
@@ -77,9 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+ADD MORE INFO
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,7 +85,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* ADD LATER
+* ![Dask](https://img.shields.io/badge/dask-black?style=for-the-badge&logo=dask&logoColor=white&link=https%3A%2F%2Fdocs.dask.org%2Fen%2Fstable%2F)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,18 +100,16 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Anaconda installation
+* Create environment
   ```sh
-  npm install npm@latest -g
+  ADD LATER
   ```
 
 ### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/winds-of-change.git
+   git clone https://github.com/ivalencius/winds-of-change.git
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -122,8 +119,13 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Downloading CMIP6 data
 
+* ADD
+
+### Creating plots
+
+* ADD
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +139,7 @@ Use this space to show useful examples of how a project can be used. Additional 
     - [ ] East/West/Texas units
 - [ ] Seasonal analysis
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/ivalencius/winds-of-change/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,16 +158,18 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Ilan Valencius  - valencig@bc.edu
 
-Project Link: [https://github.com/github_username/winds-of-change](https://github.com/github_username/winds-of-change)
+Project Link: [https://github.com/ivalencius/winds-of-change](https://github.com/ivalencius/winds-of-change)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Advisors
 
-
+* ADD GRANT INFORMATION
+* [Prof. Sweeney](https://www.bc.edu/bc-web/schools/mcas/departments/economics/people/faculty-directory/richard-l-sweeney.html)
+* [Prof. Ming](https://www.bc.edu/bc-web/schools/morrissey/departments/eesc/people/faculty-directory/yi-ming.html)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -182,5 +186,3 @@ Project Link: [https://github.com/github_username/winds-of-change](https://githu
 [issues-url]: https://github.com/ivalencius/winds-of-change/issues
 [license-shield]: https://img.shields.io/github/license/ivalencius/winds-of-change.svg?style=for-the-badge
 [license-url]: https://github.com/ivalencius/winds-of-change/blob/main/LICENSE.txt
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
