@@ -53,7 +53,7 @@ def fig_climatology(cesm2, period='near-term'):
     # Clear settings from scienceplot package
     # cax.clear()
     cb = plt.colorbar(fg, ax=axes.ravel().tolist(), orientation="vertical", extend='both', fraction=0.046, pad=0.04)
-    cb.set_label(label=f'Mean Projected Climatology ({years[0]}-{years[1]}) ', size=18, weight='bold')
+    cb.set_label(label=f'Mean Windspeeds [m/s]', size=18, weight='bold')
     cb.ax.tick_params(labelsize=16)
     fig.suptitle(f'{period} climatology ({years[0]}-{years[1]})', fontsize=30)
     plt.show()
