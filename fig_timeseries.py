@@ -12,7 +12,7 @@ def fig_timeseries(cesm2):
     for key in ['ssp126','ssp245', 'ssp370', 'ssp585']:
             # Plot mean for this species
             y = (
-                cesm2[key+'.mean'].sfcWind
+                cesm2[key+'.mean'].isel(member_id=0).sfcWind
                 .mean(['lat', 'lon'])
                 .rolling(time=5).mean()
             )

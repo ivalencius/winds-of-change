@@ -13,12 +13,12 @@ def fig_anomaly(cesm2):
     for key, ax, c in zip(['ssp126','ssp245', 'ssp370', 'ssp585'], ax.ravel(), plt.rcParams['axes.prop_cycle'].by_key()['color']):
             # Plot mean for this species
             y = (
-                cesm2[key+'.anomaly'].sfcWind
+                cesm2[key+'.anomaly'].isel(member_id=0).sfcWind
                 .mean(['lat', 'lon'])
                 # .rolling(time=5).mean()
             )
             q = (
-                cesm2[key+'.anomaly'].sfcWind
+                cesm2[key+'.anomaly'].isel(member_id=0).sfcWind
                 .quantile([0.25, 0.75], dim=['lat', 'lon'])
                 # .rolling(time=5).mean()
             )
