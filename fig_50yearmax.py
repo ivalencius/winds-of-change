@@ -5,19 +5,16 @@ import cartopy.feature as cfeature
 from cartopy.mpl.ticker import LatitudeFormatter, LongitudeFormatter
 import nc_time_axis
 
-def fig_50yearmax(cesm2):
+def fig_50yearmax(cesm2, forecast='near'):
 
     fig, axes = plt.subplots(figsize=(25,10), ncols=2, nrows=2, constrained_layout=True, subplot_kw={"projection":ccrs.PlateCarree()})
 
     for key, ax in zip(['ssp126','ssp245', 'ssp370', 'ssp585'], axes.flat):
-        ds = cesm2[key+'.weekmax']
+        ds = cesm2[key+'.50yrmax']
+        da = ds.isel(member_id=0).sfcWind.sel(forecast=forecast)
         # Plot mean for this species
-        fg = ((
-                ds.sfcWind
-                .polyfit('year', deg=1, skipna=True)
-                .polyfit_coefficients.sel(degree=1)*10
-            ).plot(ax=ax, vmin=-0.1, vmax=0.1,  cmap='coolwarm', add_colorbar=False)
-        )
+        fg = da.plot(ax=ax, vmin=5, vmax=20,  cmap='coolwarm', add_colorbar=False)
+        da.plot.contour(ax=ax, cmap='k')
         # cb = plt.colorbar(fg, orientation="vertical", pad=0.05, extend='both')
         # cb.set_label(label='Decade NSWS Trend', size=18, weight='bold')
         # cb.ax.tick_params(labelsize=16)
@@ -45,6 +42,7 @@ def fig_50yearmax(cesm2):
     # Clear settings from scienceplot package
     # cax.clear()
     cb = plt.colorbar(fg, ax=axes.ravel().tolist(), orientation="vertical", extend='both', fraction=0.046, pad=0.04)
-    cb.set_label(label='Decadal NSWS Trend', size=18, weight='bold')
+    cb.set_label(label=f'Extreme 50-year Gust', size=18, weight='bold')
     cb.ax.tick_params(labelsize=16)
+    fig.suptitle(f'Extreme 50-year Gust ({forecast}-term', fontsize=30)
     plt.show()
