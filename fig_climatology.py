@@ -8,7 +8,7 @@ import nc_time_axis
 year_dict = {
     'Near-term':['2021', '2040'],
     'Mid-term':['2041', '2060'],
-    'Long-term':['2081', '2100']
+    'Far-term':['2081', '2100']
 }
 
 def fig_climatology(cesm2, period='near-term'):
@@ -24,7 +24,7 @@ def fig_climatology(cesm2, period='near-term'):
                 ds.sfcWind
                 .sel(time=slice(years[0], years[1]))
                 .mean('time')
-            ).plot(ax=ax, vmin=2, vmax=5, cmap='plasma', add_colorbar=False)
+            ).plot.contourf(ax=ax, vmin=1.5, vmax=5.5, cmap='viridis', add_colorbar=False, levels=10)
         )
         # cb = plt.colorbar(fg, orientation="vertical", pad=0.05, extend='both')
         # cb.set_label(label='Decade NSWS Trend', size=18, weight='bold')

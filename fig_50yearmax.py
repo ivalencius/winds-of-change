@@ -13,8 +13,7 @@ def fig_50yearmax(cesm2, forecast='near'):
         ds = cesm2[key+'.50yrmax']
         da = ds.isel(member_id=0).sfcWind.sel(forecast=forecast)
         # Plot mean for this species
-        fg = da.plot(ax=ax, vmin=5, vmax=20,  cmap='coolwarm', add_colorbar=False)
-        da.plot.contour(ax=ax, cmap='k')
+        fg = da.plot.contourf(ax=ax, vmin=5, vmax=20,  cmap='plasma', add_colorbar=False, levels=11)
         # cb = plt.colorbar(fg, orientation="vertical", pad=0.05, extend='both')
         # cb.set_label(label='Decade NSWS Trend', size=18, weight='bold')
         # cb.ax.tick_params(labelsize=16)
@@ -44,5 +43,5 @@ def fig_50yearmax(cesm2, forecast='near'):
     cb = plt.colorbar(fg, ax=axes.ravel().tolist(), orientation="vertical", extend='both', fraction=0.046, pad=0.04)
     cb.set_label(label=f'Extreme 50-year Gust', size=18, weight='bold')
     cb.ax.tick_params(labelsize=16)
-    fig.suptitle(f'Extreme 50-year Gust ({forecast}-term', fontsize=30)
+    fig.suptitle(f'Extreme 50-year Gust ({forecast}-term)', fontsize=30)
     plt.show()
