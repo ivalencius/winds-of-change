@@ -25,7 +25,7 @@ def fig_lineartrend(cesm2):
     fig, axes = plt.subplots(figsize=(25,10), ncols=2, nrows=2, constrained_layout=True, subplot_kw={"projection":ccrs.PlateCarree()})
 
     for key, ax in zip(['ssp126','ssp245', 'ssp370', 'ssp585'], axes.flat):
-        ds = cesm2[key+'.anomaly'].isel(member_id=0)
+        ds = cesm2[key+'.anomaly'].mean('member_id')
         # Group by year
         yearly = ds.sfcWind.groupby('time.year').mean()
         # Determine trend data

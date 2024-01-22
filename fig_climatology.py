@@ -18,7 +18,7 @@ def fig_climatology(cesm2, period='near-term'):
     fig, axes = plt.subplots(figsize=(25,10), ncols=2, nrows=2, constrained_layout=True, subplot_kw={"projection":ccrs.PlateCarree()})
 
     for key, ax in zip(['ssp126','ssp245', 'ssp370', 'ssp585'], axes.flat):
-        ds = cesm2[key+'.mean'].isel(member_id=0)
+        ds = cesm2[key+'.mean'].mean('member_id')
         # Plot mean for this species
         fg = ((
                 ds.sfcWind

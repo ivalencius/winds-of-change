@@ -13,13 +13,13 @@ def fig_anomaly(cesm2):
     for key, ax, c in zip(['ssp126','ssp245', 'ssp370', 'ssp585'], ax.ravel(), plt.rcParams['axes.prop_cycle'].by_key()['color']):
             # Plot mean for this species
             y = (
-                cesm2[key+'.anomaly'].isel(member_id=0).sfcWind
-                .mean(['lat', 'lon'])
+                cesm2[key+'.anomaly'].sfcWind
+                .mean(['lat', 'lon', 'member_id'])
                 # .rolling(time=5).mean()
             )
             q = (
-                cesm2[key+'.anomaly'].isel(member_id=0).sfcWind
-                .quantile([0.25, 0.75], dim=['lat', 'lon'])
+                cesm2[key+'.anomaly'].sfcWind
+                .quantile([0.25, 0.75], dim=['lat', 'lon', 'member_id'])
                 # .rolling(time=5).mean()
             )
 
@@ -29,7 +29,7 @@ def fig_anomaly(cesm2):
             ax.fill_between(y.time.values, q.sel(quantile=0.25).values, q.sel(quantile=0.75).values, alpha=0.2, color=c)
             # Add zero line
             ax.hlines(0, y.time.values[0], y.time.values[-1], linestyle='--', color='k')
-            ax.set_ylim([-0.4, 0.4])
+            ax.set_ylim([-0.4, 0.3])
             ax.set_xlim([y.time.values[0], y.time.values[-1]])
             ax.set_title(f'Forcing Scenario: {key}')
             # Add linear trend
