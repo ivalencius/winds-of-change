@@ -1,0 +1,17 @@
+2024-02-01 13:15:30.512 INFO station_extract - create_client: Creating cluster
+2024-02-01 13:15:31.351 INFO station_extract - create_client: Waiting for workers to spawn
+2024-02-01 13:15:41.683 INFO station_extract - station_data: Importing stations
+2024-02-01 13:15:42.435 INFO station_extract - station_data: There are 1435 stations
+2024-02-01 13:15:42.437 INFO station_extract - station_data: Dataset created
+2024-02-01 13:15:42.446 INFO station_extract - cesm2_cmip6: Opening CMIP6 datastore
+2024-02-01 13:15:57.155 INFO station_extract - cesm2_cmip6: CESM2 CMIP6 key: CMIP.NCAR.CESM2.historical.day.gn
+2024-02-01 13:15:57.155 INFO station_extract - cesm2_cmip6: CMIP6 Compute Step
+2024-02-01 13:23:06.978 INFO station_extract - cesm2_lens2: Opening LENS2 datastore
+2024-02-01 13:23:35.317 INFO station_extract - cesm2_lens2: CESM2 LEN2 key: atm.historical.cam.h1.cmip6.WSPDSRFAV
+2024-02-01 13:23:52.813 INFO station_extract - cesm2_lens2: Loading LENS2 Files
+2024-02-01 13:24:09.461 INFO station_extract - cesm2_lens2: LENS2 Compute Step
+2024-02-01 13:24:15.803 INFO station_extract - cesm2_lens2: Opening LENS2 datastore
+2024-02-01 13:24:46.845 INFO station_extract - cesm2_lens2: CESM2 LEN2 key: atm.historical.cam.h1.smbb.WSPDSRFAV
+2024-02-01 13:25:08.625 INFO station_extract - cesm2_lens2: Loading LENS2 Files
+2024-02-01 13:25:25.113 INFO station_extract - cesm2_lens2: LENS2 Compute Step
+2024-02-01 13:25:30.612 INFO station_extract - station_data: Writing to file /glade/u/home/valencig/wind-trend-analysis/data/hist_comp_zeng2019stations.csv
